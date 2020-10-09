@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <title>TP1 Web Agency</title>
+    </head>
+    <body>
+        <head>
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <img src="assets/img/logo.png" alt="webagency logo" />
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#" class="nav__links">Acceuil</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="nav__links">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="nav__links"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav__links">Contact</a>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+        </head>
+        <main>
+            <section class="carousel" id="carousel">
+                <figure class="visible">
+                    <img
+                        src="assets/img/slider/bg1.jpg"
+                        alt="image carousel fille"
+                    />
+                    <figcaption>
+                        <h1>
+                            <span>Webagency</span> : l'Agence de tous vos
+                            projets !
+                        </h1>
+                        <p>
+                            Vous avez un projet web ? La WebAgency vous aide à
+                            le réaliser !
+                        </p>
+                        <a href="#" class="btn btn--active">Plus d'infos</a>
+                    </figcaption>
+                </figure>
+                <figure class="hidden">
+                    <img
+                        src="assets/img/slider/bg2.jpg"
+                        alt="image carousel garçon"
+                    />
+                    <figcaption>
+                        <p>
+                            <span>Webagency</span> : l'Agence de tous vos
+                            projets !
+                        </p>
+                        <p>
+                            Vous avez un projet web ? La WebAgency vous aide à
+                            le réaliser !
+                        </p>
+                        <a href="#" class="btn btn--active">Plus d'infos</a>
+                    </figcaption>
+                </figure>
+                <div class="selector selector__prev" onclick="selector(this)">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="selector selector__next" onclick="selector(this)">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <ul class="slides__container">
+                    <li class="slide slide--1 visible"></li>
+                    <li class="slide slide--2 hidden"></li>
+                </ul>
+            </section>
+            <section class="services" id="services">
+                <div class="intro__section">
+                    <h2>Nos services</h2>
+                    <hr />
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Veritatis, atque nesciunt! Magni cum voluptate ex
+                        atque porro aliquam adipisci, veniam rem minima iusto.
+                    </p>
+                </div>
+                <div class="services__content">
+                    <div>
+                        <img
+                            src="assets/img/main-feature.png"
+                            alt="image d'un mac"
+                        />
+                    </div>
+                    <ul>
+                        <li>
+                            <div><i class="fas fa-chart-line"></i></div>
+                            <div>
+                                <h3>UX design</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Recusandae, quas, fugiat
+                                    ducimus qui inventore ipsum dolor beatae
+                                    modi optio repudiandae, voluptate ab.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div><i class="fas fa-layer-group"></i></div>
+                            <div>
+                                <h3>UI design</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Recusandae, quas, fugiat
+                                    ducimus qui inventore ipsum dolor beatae
+                                    modi optio repudiandae, voluptate ab.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div><i class="fas fa-chart-pie"></i></div>
+                            <div>
+                                <h3>SEO</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Recusandae, quas, fugiat
+                                    ducimus qui inventore ipsum dolor beatae
+                                    modi optio repudiandae, voluptate ab.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="portfolio" id="portfolio">
+                <div class="intro__section">
+                    <h2>Nos projets</h2>
+                    <hr />
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Veritatis, atque nesciunt! Magni cum voluptate ex
+                        atque porro aliquam adipisci, veniam rem minima iusto.
+                    </p>
+                </div>
+                <ul class="portfolio__nav">
+                    <li>
+                        <button
+                            class="portfolio__nav--links btn btn--triangle btn--left"
+                            onclick="display()"
+                        >
+                            All Works
+                        </button>
+                    </li>
+                    <li>
+                        <button class="portfolio__nav--links btn btn--triangle">
+                            Creative
+                        </button>
+                    </li>
+                    <li>
+                        <button class="portfolio__nav--links btn btn--triangle">
+                            Corporate
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            class="portfolio__nav--links btn btn--triangle btn--right"
+                        >
+                            Portfolio
+                        </button>
+                    </li>
+                </ul>
+                <div class="projets" id="projets">
+                    <div class="projets__cards projets__cards--1">
+                        <div class="desc">
+                            <h4>Portfolio item 1</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="projets__cards projets__cards--2">
+                        <div class="desc">
+                            <h4>Portfolio item 2</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="projets__cards projets__cards--3">
+                        <div class="desc">
+                            <h4>Portfolio item 3</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="projets__cards projets__cards--4">
+                        <div class="desc">
+                            <h4>Portfolio item 4</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="projets__cards projets__cards--5">
+                        <div class="desc">
+                            <h4>Portfolio item 5</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="projets__cards projets__cards--6">
+                        <div class="desc">
+                            <h4>Portfolio item 6</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="projets__cards projets__cards--7">
+                        <div class="desc">
+                            <h4>Portfolio item 7</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="projets__cards projets__cards--8">
+                        <div class="desc">
+                            <h4>Portfolio item 8</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <h2>Contact</h2>
+                <div class="contact__container">
+                    <div style="width: 700px; position: relative">
+                        <iframe
+                            width="700"
+                            height="440"
+                            src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=25%20rue%20d%5C'Hauteville%2075010+(Titre)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                            frameborder="0"
+                            scrolling="no"
+                            marginheight="0"
+                            marginwidth="0"
+                        ></iframe>
+                        <div
+                            style="
+                                position: absolute;
+                                width: 80%;
+                                bottom: 10px;
+                                left: 0;
+                                right: 0;
+                                margin-left: auto;
+                                margin-right: auto;
+                                color: #000;
+                                text-align: center;
+                            "
+                        >
+                            <small
+                                style="
+                                    line-height: 1.8;
+                                    font-size: 2px;
+                                    background: #fff;
+                                "
+                                >Powered by
+                                <a href="http://www.googlemapsgenerator.com/zh/"
+                                    >googlemapsgen (zh)</a
+                                >
+                                &
+                                <a
+                                    href="https://opwaarderenlebara.nl/promoties-lebara/"
+                                    >https://opwaarderenlebara.nl/promoties-lebara/</a
+                                ></small
+                            >
+                        </div>
+                        <style>
+                            #gmap_canvas img {
+                                max-width: none !important;
+                                background: none !important;
+                            }
+                        </style>
+                    </div>
+                    <br />
+                    <div class="contact--info">
+                        <form>
+                            <h3>Contact info</h3>
+                            <ul>
+                                <li>WebAgency SAS</li>
+                                <li>25 Rue d'Hauteville 75010 Paris</li>
+                                <li>Tel : 01 02 03 04 05</li>
+                            </ul>
+                            <div>
+                                <input
+                                    type="text"
+                                    name="Name"
+                                    placeholder="Name"
+                                />
+                            </div>
+                            <div>
+                                <input
+                                    type="email"
+                                    name="Email"
+                                    placeholder="Email"
+                                />
+                            </div>
+                            <div>
+                                <input
+                                    type="text"
+                                    name="Subject"
+                                    placeholder="Subject"
+                                />
+                            </div>
+                            <div>
+                                <textarea
+                                    name="message"
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Message"
+                                ></textarea>
+                            </div>
+                            <button class="btn btn--active" type="submit">
+                                Send a Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        <script
+            src="https://kit.fontawesome.com/c327878e2f.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

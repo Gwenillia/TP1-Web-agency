@@ -1,0 +1,241 @@
+.intro__section {
+    position: relative;
+    text-align: center;
+    padding-top: $topdp;
+    h2 {
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+    hr {
+        margin: 2rem 0;
+        width: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        &::before {
+            content: " ";
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            background-color: $primary_color;
+            top: 15.5rem;
+            left: 49.4%;
+            border: 0.5rem solid white;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+    p {
+        width: 40%;
+        margin: 0 auto;
+        line-height: 3rem;
+    }
+}
+.services {
+    &__content {
+        display: flex;
+        padding-top: 10rem;
+        justify-content: space-evenly;
+        div {
+            align-self: center;
+        }
+        ul {
+            width: 40%;
+            li {
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                text-align: left;
+                &:first-child {
+                    margin-bottom: 4rem;
+                }
+                &:last-child {
+                    margin-top: 4rem;
+                }
+                div {
+                    position: relative;
+                    &:first-child {
+                        &::before {
+                            content: " ";
+                            position: absolute;
+                            width: 2rem;
+                            height: 2rem;
+                            left: 6.5rem;
+                            top: 2.5rem;
+                            background-color: $primary_color;
+                            border: 0.5rem solid white;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                        }
+                    }
+                    svg {
+                        margin-right: 3rem;
+                        font-size: 8rem;
+                        padding: 2rem;
+                        border: 0.1rem solid grey;
+                        color: $primary_color;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+                }
+
+                h3 {
+                    font-weight: 900;
+                }
+                p {
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+.portfolio {
+    margin-top: $topdp;
+    padding-bottom: $topdp;
+    background-color: $portfolio_bg;
+    &__nav {
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        .btn {
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+        }
+    }
+    .projets {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-flow: row wrap;
+        &__cards {
+            width: 30rem;
+            height: 20rem;
+            background-color: yellowgreen;
+            background-size: cover !important;
+            cursor: pointer;
+            position: relative;
+            &--1 {
+                background: url("assets/img/portfolio/01.jpg");
+            }
+            &--2 {
+                background: url("assets/img/portfolio/02.jpg");
+            }
+            &--3 {
+                background: url("assets/img/portfolio/03.jpg");
+            }
+            &--4 {
+                background: url("assets/img/portfolio/04.jpg");
+            }
+            &--5 {
+                background: url("assets/img/portfolio/05.jpg");
+            }
+            &--6 {
+                background: url("assets/img/portfolio/06.jpg");
+            }
+            &--7 {
+                background: url("assets/img/portfolio/07.jpg");
+            }
+            &--8 {
+                background: url("assets/img/portfolio/08.jpg");
+            }
+            .desc {
+                background: rgba($color: #000000, $alpha: 0.3);
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                color: white;
+                padding: 1rem;
+                opacity: 0;
+                transition: 0.2s ease-in-out;
+                -webkit-transition: 0.2s ease-in-out;
+                -moz-transition: 0.2s ease-in-out;
+                -ms-transition: 0.2s ease-in-out;
+                -o-transition: 0.2s ease-in-out;
+                &:hover {
+                    opacity: 1;
+                    transition: 0.2s ease-in-out;
+                    -webkit-transition: 0.2s ease-in-out;
+                    -moz-transition: 0.2s ease-in-out;
+                    -ms-transition: 0.2s ease-in-out;
+                    -o-transition: 0.2s ease-in-out;
+                }
+                h4 {
+                    padding-bottom: 1rem;
+                }
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    width: 3rem;
+                    height: 3rem;
+                    top: -1.7rem;
+                    right: 1.7rem;
+                    background-color: $primary_color;
+                    border: 0.2rem solid white;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+                svg {
+                    position: absolute;
+                    top: -0.7rem;
+                    right: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    background-color: $portfolio_bg;
+    &__container {
+        position: relative;
+    }
+    h2 {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: $topdp;
+        margin-bottom: $topdp;
+    }
+    iframe {
+        width: 100vw;
+        height: 75vh;
+        position: relative;
+        &::before {
+            width: 100vw;
+            height: 75vh;
+        }
+    }
+    form {
+        position: absolute;
+        top: 10rem;
+        right: 7rem;
+        padding: 3rem;
+        background: rgba($color: #fff, $alpha: 0.8);
+        div {
+            input {
+                padding: 0.5rem;
+                margin-bottom: 1.4rem;
+            }
+        }
+    }
+}

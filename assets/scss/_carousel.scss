@@ -1,0 +1,94 @@
+.carousel {
+    position: relative;
+    figure {
+        img {
+            display: none;
+            width: 100%;
+        }
+        figcaption {
+            display: none;
+        }
+    }
+    .visible {
+        img {
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+        figcaption {
+            display: block;
+            position: absolute;
+            top: 33%;
+            left: $hordp;
+            color: $carousel_font_color;
+            width: 35%;
+            font-weight: 800;
+            span {
+                color: $primary_color;
+            }
+            p {
+                margin: 1.5rem 0 3.5rem 0;
+            }
+            h1 {
+                font-size: 4rem;
+                text-transform: uppercase;
+                line-height: 4rem;
+            }
+        }
+    }
+    .selector {
+        color: $carousel_font_color;
+        position: absolute;
+        top: 50%;
+        font-size: 3rem;
+        cursor: pointer;
+        &::before {
+            content: " ";
+            width: 7rem;
+            height: 7rem;
+            position: absolute;
+            background-color: rgba($color: #000000, $alpha: 0.2);
+            top: -1.5rem;
+        }
+    }
+    .selector__prev {
+        left: 1rem;
+        &::before {
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            left: -3rem;
+        }
+    }
+    .selector__next {
+        right: 1rem;
+        &::before {
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            right: -3rem;
+        }
+    }
+    .slides__container {
+        display: flex;
+        .slide {
+            content: " ";
+            height: 1rem;
+            width: 50%;
+        }
+        .visible {
+            background-color: $primary_color;
+            transition: 1s;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -ms-transition: 1s;
+            -o-transition: 1s;
+        }
+        .hidden {
+            background-color: rgba($color: #000000, $alpha: 0.4);
+            transition: 1s ease-in-out;
+            -webkit-transition: 1s ease-in-out;
+            -moz-transition: 1s ease-in-out;
+            -ms-transition: 1s ease-in-out;
+            -o-transition: 1s ease-in-out;
+        }
+    }
+}
