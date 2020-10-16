@@ -113,6 +113,7 @@ nav ul:last-child .active {
 nav ul:last-child a {
   display: block;
   height: 6.1rem;
+  width: 10rem;
   padding-top: 3.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
