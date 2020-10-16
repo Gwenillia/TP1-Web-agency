@@ -140,28 +140,28 @@
             cursor: pointer;
             position: relative;
             &--1 {
-                background: url("assets/img/portfolio/01.jpg");
+                background: url("../img/portfolio/01.jpg");
             }
             &--2 {
-                background: url("assets/img/portfolio/02.jpg");
+                background: url("../img/portfolio/02.jpg");
             }
             &--3 {
-                background: url("assets/img/portfolio/03.jpg");
+                background: url("../img/portfolio/03.jpg");
             }
             &--4 {
-                background: url("assets/img/portfolio/04.jpg");
+                background: url("../img/portfolio/04.jpg");
             }
             &--5 {
-                background: url("assets/img/portfolio/05.jpg");
+                background: url("../img/portfolio/05.jpg");
             }
             &--6 {
-                background: url("assets/img/portfolio/06.jpg");
+                background: url("../img/portfolio/06.jpg");
             }
             &--7 {
-                background: url("assets/img/portfolio/07.jpg");
+                background: url("../img/portfolio/07.jpg");
             }
             &--8 {
-                background: url("assets/img/portfolio/08.jpg");
+                background: url("../img/portfolio/08.jpg");
             }
             .desc {
                 background: rgba($color: #000000, $alpha: 0.3);
@@ -343,6 +343,11 @@
             &::before {
                 display: none;
             }
+        }
+    }
+    .contact {
+        form {
+            top: 5rem !important;
         }
     }
 }

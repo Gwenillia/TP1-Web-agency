@@ -44,5 +44,3 @@ function selector(e) {
         }
     }
 }
-
-//portfolio

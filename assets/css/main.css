@@ -505,35 +505,35 @@ nav ul:last-child a:active {
 }
 
 .portfolio .projets__cards--1 {
-  background: url("assets/img/portfolio/01.jpg");
+  background: url("../img/portfolio/01.jpg");
 }
 
 .portfolio .projets__cards--2 {
-  background: url("assets/img/portfolio/02.jpg");
+  background: url("../img/portfolio/02.jpg");
 }
 
 .portfolio .projets__cards--3 {
-  background: url("assets/img/portfolio/03.jpg");
+  background: url("../img/portfolio/03.jpg");
 }
 
 .portfolio .projets__cards--4 {
-  background: url("assets/img/portfolio/04.jpg");
+  background: url("../img/portfolio/04.jpg");
 }
 
 .portfolio .projets__cards--5 {
-  background: url("assets/img/portfolio/05.jpg");
+  background: url("../img/portfolio/05.jpg");
 }
 
 .portfolio .projets__cards--6 {
-  background: url("assets/img/portfolio/06.jpg");
+  background: url("../img/portfolio/06.jpg");
 }
 
 .portfolio .projets__cards--7 {
-  background: url("assets/img/portfolio/07.jpg");
+  background: url("../img/portfolio/07.jpg");
 }
 
 .portfolio .projets__cards--8 {
-  background: url("assets/img/portfolio/08.jpg");
+  background: url("../img/portfolio/08.jpg");
 }
 
 .portfolio .projets__cards .desc {
@@ -693,12 +693,19 @@ nav ul:last-child a:active {
   .intro__section hr::before {
     display: none;
   }
+  .contact form {
+    top: 5rem !important;
+  }
 }
 
 @media screen and (max-width: 359px) {
   .contact form {
     right: 4rem;
   }
+}
+
+footer p {
+  text-align: center;
 }
 
 .btn {
