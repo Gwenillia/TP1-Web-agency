@@ -499,7 +499,7 @@ nav ul:last-child a:active {
   width: 30rem;
   height: 20rem;
   background-size: cover !important;
-  background-position: center;
+  background-position: center !important;
   cursor: pointer;
   position: relative;
 }
