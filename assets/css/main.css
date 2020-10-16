@@ -15,7 +15,7 @@
 }
 
 // lower tablet res 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 599px) {
 }
 
 // mobile
@@ -498,8 +498,8 @@ nav ul:last-child a:active {
 .portfolio .projets__cards {
   width: 30rem;
   height: 20rem;
-  background-color: yellowgreen;
   background-size: cover !important;
+  background-position: center;
   cursor: pointer;
   position: relative;
 }
