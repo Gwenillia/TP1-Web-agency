@@ -3,20 +3,46 @@ nav {
     top: 0;
     z-index: 1;
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $hordp;
     ul:first-child {
-        margin: 0 $hordp;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         img {
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
-        ul {
-            display: flex;
-            justify-content: space-between;
-            margin-top: -4rem; //annule le margin causé par le img {padding-top: 2rem; padding-bottom: 2rem;} line:8
-            .active {
+        .logo + li {
+            display: none;
+        }
+    }
+    ul:last-child {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -4rem; //annule le margin causé par le img {padding-top: 2rem; padding-bottom: 2rem;} line:8
+        .active {
+            font-weight: 800;
+            border-top: 5px solid;
+            border-color: $primary_color;
+            transition: 0.2s ease-in-out;
+            -webkit-transition: 0.2s ease-in-out;
+            -moz-transition: 0.2s ease-in-out;
+            -ms-transition: 0.2s ease-in-out;
+            -o-transition: 0.2s ease-in-out;
+        }
+        a {
+            display: block;
+            height: 6.1rem;
+            padding-top: 3.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border-top: 5px solid transparent;
+            transition: 0.2s ease-in-out;
+            -webkit-transition: 0.2s ease-in-out;
+            -moz-transition: 0.2s ease-in-out;
+            -ms-transition: 0.2s ease-in-out;
+            -o-transition: 0.2s ease-in-out;
+            &:active {
                 border-top: 5px solid;
                 border-color: $primary_color;
                 transition: 0.2s ease-in-out;
@@ -25,28 +51,50 @@ nav {
                 -ms-transition: 0.2s ease-in-out;
                 -o-transition: 0.2s ease-in-out;
             }
-            a {
+        }
+    }
+}
+
+// responsive
+//lower res desktop
+@media screen and (max-width: 1365px) {
+    nav {
+        padding: 0 $hortabletp;
+    }
+}
+// tablet
+// average
+@media screen and (max-width: 799px) {
+    nav {
+        flex-direction: column;
+        #nav {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            width: 100%;
+            .logo + li {
                 display: block;
-                height: 6.1rem;
-                padding-top: 3.5rem;
-                padding-left: 2rem;
-                padding-right: 2rem;
-                border-top: 5px solid transparent;
-                transition: 0.2s ease-in-out;
-                -webkit-transition: 0.2s ease-in-out;
-                -moz-transition: 0.2s ease-in-out;
-                -ms-transition: 0.2s ease-in-out;
-                -o-transition: 0.2s ease-in-out;
-                &:active {
-                    border-top: 5px solid;
-                    border-color: $primary_color;
-                    transition: 0.2s ease-in-out;
-                    -webkit-transition: 0.2s ease-in-out;
-                    -moz-transition: 0.2s ease-in-out;
-                    -ms-transition: 0.2s ease-in-out;
-                    -o-transition: 0.2s ease-in-out;
-                }
+                align-self: center;
+                font-size: 2.5rem;
+                color: $primary_color;
             }
         }
+        ul:last-child {
+            display: none;
+            a {
+                border: 0.1rem solid $dfont_color;
+            }
+        }
+        .displayNav {
+            display: block !important;
+            width: 100%;
+            margin-top: 0.1rem !important;
+        }
+    }
+}
+// lower tablet res
+@media screen and (max-width: 599px) {
+    nav {
+        padding: 0 $lowertabletp;
     }
 }

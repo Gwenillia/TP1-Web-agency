@@ -10,7 +10,6 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
 }
 
 body {
@@ -22,5 +21,13 @@ body {
     a:active,
     a:visited {
         color: $dfont_color;
+    }
+}
+
+// responsive
+//lower res desktop
+@media screen and (max-width: 1365px) {
+    body {
+        font-size: 1.4rem;
     }
 }

@@ -1,4 +1,9 @@
 //nav
+function toggleNav() {
+    const navToggler = document.getElementById("navLinks");
+    navToggler.classList.toggle("displayNav");
+}
+
 const links = document.querySelectorAll(".nav__links");
 const sections = document.querySelectorAll("section");
 

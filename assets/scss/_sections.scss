@@ -1,3 +1,4 @@
+//intro
 .intro__section {
     position: relative;
     text-align: center;
@@ -33,6 +34,8 @@
         line-height: 3rem;
     }
 }
+
+// services
 .services {
     &__content {
         display: flex;
@@ -40,6 +43,9 @@
         justify-content: space-evenly;
         div {
             align-self: center;
+            img {
+                max-width: 100%;
+            }
         }
         ul {
             width: 40%;
@@ -99,6 +105,7 @@
     }
 }
 
+//portfolio
 .portfolio {
     margin-top: $topdp;
     padding-bottom: $topdp;
@@ -205,10 +212,14 @@
     }
 }
 
+// contact
 .contact {
     background-color: $portfolio_bg;
     &__container {
         position: relative;
+        div {
+            width: 100% !important;
+        }
     }
     h2 {
         font-size: 4rem;
@@ -216,26 +227,131 @@
         padding-top: $topdp;
         margin-bottom: $topdp;
     }
+
     iframe {
-        width: 100vw;
+        width: 100%;
         height: 75vh;
         position: relative;
-        &::before {
-            width: 100vw;
-            height: 75vh;
-        }
     }
     form {
+        h3 {
+            margin-bottom: 1rem;
+        }
         position: absolute;
         top: 10rem;
         right: 7rem;
         padding: 3rem;
         background: rgba($color: #fff, $alpha: 0.8);
         div {
-            input {
-                padding: 0.5rem;
-                margin-bottom: 1.4rem;
+            &:first-of-type {
+                margin-top: 2rem;
             }
+            input,
+            textarea {
+                padding: 0.5rem;
+                text-indent: 0.5rem;
+                font-family: "Roboto", sans-serif;
+                margin-bottom: 1.4rem;
+                width: 100%;
+                border: 0.1rem solid $btn_color;
+                border-radius: 0.5rem;
+                -webkit-border-radius: 0.5rem;
+                -moz-border-radius: 0.5rem;
+                -ms-border-radius: 0.5rem;
+                -o-border-radius: 0.5rem;
+            }
+        }
+    }
+}
+
+// responsive
+//lower res desktop
+@media screen and (max-width: 1700px) {
+    .intro__section {
+        hr {
+            &::before {
+                left: 49%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1365px) {
+    .portfolio {
+        .projets {
+            justify-content: center;
+        }
+    }
+}
+// tablet
+// iPad Pro
+@media screen and (max-width: 1023px) {
+    .intro__section {
+        hr {
+            &::before {
+                left: 48.5%;
+            }
+        }
+    }
+    .services__content {
+        padding-top: 2rem;
+        display: block;
+        div {
+            &:first-of-type {
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+        }
+        ul {
+            width: 100%;
+            padding: 0 $hortabletp;
+        }
+    }
+}
+
+// average
+@media screen and (max-width: 799px) {
+    .intro__section {
+        hr {
+            &::before {
+                left: 48%;
+            }
+        }
+    }
+}
+
+// lower tablet res
+@media screen and (max-width: 599px) {
+    .intro__section {
+        hr {
+            &::before {
+                left: 47.5%;
+            }
+        }
+    }
+    .services__content {
+        ul {
+            padding: 0 $lowertabletp;
+        }
+    }
+}
+
+// mobile
+// iPhone 6 - 11pro max
+@media screen and (max-width: 413px) {
+    .intro__section {
+        hr {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+// average
+@media screen and (max-width: 359px) {
+    .contact {
+        form {
+            right: 4rem;
         }
     }
 }

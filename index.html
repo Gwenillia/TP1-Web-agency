@@ -8,31 +8,35 @@
     </head>
     <body>
         <head>
+            <!-- navbar -->
             <nav>
-                <ul>
+                <ul id="nav">
                     <li class="logo">
                         <img src="assets/img/logo.png" alt="webagency logo" />
                     </li>
-                    <ul>
-                        <li>
-                            <a href="#" class="nav__links">Acceuil</a>
-                        </li>
-                        <li>
-                            <a href="#services" class="nav__links">Services</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="nav__links"
-                                >Portfolio</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#contact" class="nav__links">Contact</a>
-                        </li>
-                    </ul>
+                    <li onclick="toggleNav()">
+                        <i class="fas fa-bars"></i>
+                    </li>
+                </ul>
+                <ul id="navLinks">
+                    <li>
+                        <a href="#" class="nav__links">Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav__links">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav__links">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__links">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </head>
+
         <main>
+            <!-- Carousel -->
             <section class="carousel" id="carousel">
                 <figure class="visible">
                     <img
@@ -57,10 +61,10 @@
                         alt="image carousel garçon"
                     />
                     <figcaption>
-                        <p>
+                        <h1>
                             <span>Webagency</span> : l'Agence de tous vos
                             projets !
-                        </p>
+                        </h1>
                         <p>
                             Vous avez un projet web ? La WebAgency vous aide à
                             le réaliser !
@@ -79,6 +83,8 @@
                     <li class="slide slide--2 hidden"></li>
                 </ul>
             </section>
+
+            <!-- Services -->
             <section class="services" id="services">
                 <div class="intro__section">
                     <h2>Nos services</h2>
@@ -136,6 +142,8 @@
                     </ul>
                 </div>
             </section>
+
+            <!-- portfolio -->
             <section class="portfolio" id="portfolio">
                 <div class="intro__section">
                     <h2>Nos projets</h2>
@@ -232,9 +240,12 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Contact -->
             <section class="contact" id="contact">
                 <h2>Contact</h2>
                 <div class="contact__container">
+                    <!-- Gmap -->
                     <div style="width: 700px; position: relative">
                         <iframe
                             width="700"
@@ -283,6 +294,8 @@
                         </style>
                     </div>
                     <br />
+
+                    <!-- formulaire -->
                     <div class="contact--info">
                         <form>
                             <h3>Contact info</h3>
