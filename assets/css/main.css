@@ -61,6 +61,8 @@ body a:visited {
 }
 
 nav {
+  -webkit-box-shadow: 0 0.2rem 0.2rem -0.2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.2rem 0.2rem -0.2rem rgba(0, 0, 0, 0.3);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
