@@ -176,6 +176,12 @@ nav ul:last-child a:active {
     width: 100%;
     margin-top: 0.1rem !important;
   }
+  nav .displayNav li a {
+    padding-top: 2.25rem;
+  }
+  nav .displayNav li .active {
+    border-top: 0.1rem solid #5dadd3;
+  }
 }
 
 @media screen and (max-width: 599px) {

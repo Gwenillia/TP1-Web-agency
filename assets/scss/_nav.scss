@@ -90,6 +90,14 @@ nav {
             display: block !important;
             width: 100%;
             margin-top: 0.1rem !important;
+            li {
+                a {
+                    padding-top: 2.25rem;
+                }
+                .active {
+                    border-top: 0.1rem solid $primary_color;
+                }
+            }
         }
     }
 }
