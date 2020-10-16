@@ -715,6 +715,10 @@ nav ul:last-child a:active {
   outline: none;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .btn.btn--active,
 .btn:active,
 .btn:focus {

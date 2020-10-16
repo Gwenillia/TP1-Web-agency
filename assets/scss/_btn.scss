@@ -10,6 +10,9 @@
     border: none;
     border-bottom: 0.4rem solid $btn_bg;
     outline: none;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .btn.btn--active,
