@@ -1,0 +1,17 @@
+{
+  "name": "tpunwebagency",
+  "version": "2.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Gwenillia/TP1-Web-agency.git",
+  "author": "Gwenillia <55385809+Gwenillia@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "global": "^4.4.0",
+    "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "devDependencies": {
+    "@prettier/plugin-pug": "^1.10.1",
+    "prettier": "^2.1.2"
+  }
+}
