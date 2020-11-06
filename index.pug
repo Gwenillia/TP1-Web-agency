@@ -1,60 +1,78 @@
 doctype html
 head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='stylesheet' href='assets/css/main.min.css' type='text/css')
-  link(rel='icon' type='image/x-icon' href='assets/img/ico/favicon.ico')
-  link(rel='apple-touch-icon-precomposed' href='assets/img/ico/apple-touch-icon-57-precomposed.png')
-  link(rel='apple-touch-icon-precomposed' sizes='72x72' href='assets/img/ico/apple-touch-icon-57-precomposed.png')
-  link(rel='apple-touch-icon-precomposed' sizes='114x114' href='assets/img/ico/apple-touch-icon-57-precomposed.png')
-  link(rel='apple-touch-icon-precomposed' sizes='144x144' href='assets/img/ico/apple-touch-icon-57-precomposed.png')
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  link(rel="stylesheet", href="assets/css/main.css", type="text/css")
+  link(rel="icon", type="image/x-icon", href="assets/img/ico/favicon.ico")
+  link(
+    rel="apple-touch-icon-precomposed",
+    href="assets/img/ico/apple-touch-icon-57-precomposed.png"
+  )
+  link(
+    rel="apple-touch-icon-precomposed",
+    sizes="72x72",
+    href="assets/img/ico/apple-touch-icon-57-precomposed.png"
+  )
+  link(
+    rel="apple-touch-icon-precomposed",
+    sizes="114x114",
+    href="assets/img/ico/apple-touch-icon-57-precomposed.png"
+  )
+  link(
+    rel="apple-touch-icon-precomposed",
+    sizes="144x144",
+    href="assets/img/ico/apple-touch-icon-57-precomposed.png"
+  )
   title TP1 Web Agency
 
 // navbar
 nav
   ul#nav
     li.logo
-      img(src='assets/img/logo.png' alt='webagency logo')
-    li(onclick='toggleNav()')
+      img(src="assets/img/logo.png", alt="webagency logo")
+    li(onclick="toggleNav()")
       i.fas.fa-bars
   ul#navLinks
     li
-      a.nav__links(href='#') Acceuil
+      a.nav__links(href="#") Acceuil
     li
-      a.nav__links(href='#services') Services
+      a.nav__links(href="#services") Services
     li
-      a.nav__links(href='#portfolio') Portfolio
+      a.nav__links(href="#portfolio") Portfolio
     li
-      a.nav__links(href='#contact') Contact
+      a.nav__links(href="#contact") Contact
 main
-
   // Carousel
   section#carousel.carousel
     figure.visible
-      img(src='assets/img/slider/bg1.jpg' alt='image carousel fille')
+      img(src="assets/img/slider/bg1.jpg", alt="image carousel fille")
       figcaption
         h1
           span Webagency
-          |  : l&apos;Agence de tous vos
-          |                             projets !
+          |
+          | : l&apos;Agence de tous vos
+          |
+          | projets !
         p
           | Vous avez un projet web ? La WebAgency vous aide &agrave;
           | le r&eacute;aliser !
-        a.btn.btn--active(href='#') Plus d&apos;infos
+        a.btn.btn--active(href="#") Plus d&apos;infos
     figure.hidden
-      img(src='assets/img/slider/bg2.jpg' alt='image carousel garçon')
+      img(src="assets/img/slider/bg2.jpg", alt="image carousel garçon")
       figcaption
         h1
           span Webagency
-          |  : l&apos;Agence de tous vos
-          |                             projets !
+          |
+          | : l&apos;Agence de tous vos
+          |
+          | projets !
         p
           | Vous avez un projet web ? La WebAgency vous aide &agrave;
           | le r&eacute;aliser !
-        a.btn.btn--active(href='#') Plus d&apos;infos
-    .selector.selector__prev(onclick='selector(this)')
+        a.btn.btn--active(href="#") Plus d&apos;infos
+    .selector.selector__prev(onclick="selector(this)")
       i.fas.fa-chevron-left
-    .selector.selector__next(onclick='selector(this)')
+    .selector.selector__next(onclick="selector(this)")
       i.fas.fa-chevron-right
     ul.slides__container
       li.slide.slide--1.visible
@@ -71,7 +89,7 @@ main
         | atque porro aliquam adipisci, veniam rem minima iusto.
     .services__content
       div
-        img(src='assets/img/main-feature.png' alt="image d'un mac")
+        img(src="assets/img/main-feature.png", alt="image d'un mac")
       ul
         li
           div
@@ -173,35 +191,48 @@ main
     h2 Contact
     .contact__container
       // Gmap
-      div(style='width: 700px; position: relative')
-        iframe(width='700' height='440' src="https://maps.google.com/maps?width=700&height=440&hl=en&q=25%20rue%20d%5C'Hauteville%2075010+(Titre)&ie=UTF8&t=&z=14&iwloc=B&output=embed" frameborder='0' scrolling='no' marginheight='0' marginwidth='0')
-        div(style='\
-        position: absolute;\
-        width: 80%;\
-        bottom: 10px;\
-        left: 0;\
-        right: 0;\
-        margin-left: auto;\
-        margin-right: auto;\
-        color: #000;\
-        text-align: center;\
-        ')
-          small(style='\
-          line-height: 1.8;\
-          font-size: 2px;\
-          background: #fff;\
-          ')
+      div(style="width: 700px; position: relative")
+        iframe(
+          width="700",
+          height="440",
+          src="https://maps.google.com/maps?width=700&height=440&hl=en&q=25%20rue%20d%5C'Hauteville%2075010+(Titre)&ie=UTF8&t=&z=14&iwloc=B&output=embed",
+          frameborder="0",
+          scrolling="no",
+          marginheight="0",
+          marginwidth="0"
+        )
+        div(
+          style='\
+                  position: absolute;\
+                  width: 80%;\
+                  bottom: 10px;\
+                  left: 0;\
+                  right: 0;\
+                  margin-left: auto;\
+                  margin-right: auto;\
+                  color: #000;\
+                  text-align: center;\
+                  '
+        )
+          small(
+            style='\
+                      line-height: 1.8;\
+                      font-size: 2px;\
+                      background: #fff;\
+                      '
+          )
             | Powered by
-            a(href='http://www.googlemapsgenerator.com/zh/') googlemapsgen (zh)
-            |                                 &amp;
-            a(href='https://opwaarderenlebara.nl/promoties-lebara/') https://opwaarderenlebara.nl/promoties-lebara/
+            a(href="http://www.googlemapsgenerator.com/zh/") googlemapsgen (zh)
+            |
+            | &amp;
+            a(href="https://opwaarderenlebara.nl/promoties-lebara/") https://opwaarderenlebara.nl/promoties-lebara/
         style.
           #gmap_canvas img {
           max-width: none !important;
           background: none !important;
           }
       br
-      
+
       // formulaire
       .contact--info
         form
@@ -211,20 +242,29 @@ main
             li 25 Rue d&apos;Hauteville 75010 Paris
             li Tel : 01 02 03 04 05
           div
-            input(type='text' name='Name' placeholder='Name')
+            input(type="text", name="Name", placeholder="Name")
           div
-            input(type='email' name='Email' placeholder='Email')
+            input(type="email", name="Email", placeholder="Email")
           div
-            input(type='text' name='Subject' placeholder='Subject')
+            input(type="text", name="Subject", placeholder="Subject")
           div
-            textarea(name='message' cols='30' rows='10' placeholder='Message')
-          button.btn.btn--active(type='submit')
+            textarea(
+              name="message",
+              cols="30",
+              rows="10",
+              placeholder="Message"
+            )
+          button.btn.btn--active(type="submit")
             | Send a Message
 footer
   p
     | &copy;
     script.
       document.write(new Date().getFullYear());
-    |                 Gwen Tripet-Costet (fait dans le cadre d&apos;un TP)
-script(src='https://kit.fontawesome.com/c327878e2f.js' crossorigin='anonymous')
-script(src='assets/js/main.js')
+    |
+    | Gwen Tripet-Costet (fait dans le cadre d&apos;un TP)
+script(
+  src="https://kit.fontawesome.com/c327878e2f.js",
+  crossorigin="anonymous"
+)
+script(src="assets/js/main.js")

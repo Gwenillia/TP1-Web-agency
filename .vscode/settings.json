@@ -2,9 +2,8 @@
     "compile-hero": {
         "disable-compile-files-on-did-save-code": false,
         "pug-output-directory": "./",
-        "scss-output-directory": "/assets/css",
-        "ignore": [
-            "**/assets/scss/*"
-        ]
-    }
+        "scss-output-directory": "/assets/css"
+    },
+    "compile-hero.scss-output-directory": "./assets/css",
+    "compile-hero.generate-minified-css": true
 }

@@ -13,6 +13,8 @@ html {
 }
 
 body {
+    max-width: 180rem;
+    margin: auto;
     font-size: 1.6rem;
     font-family: "Roboto", sans-serif;
     color: $dfont_color;
