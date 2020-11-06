@@ -20,7 +20,7 @@ nav {
     ul:last-child {
         display: flex;
         justify-content: space-between;
-        margin-top: -4rem; //annule le margin causé par le img {padding-top: 2rem; padding-bottom: 2rem;} line:8
+        margin-top: -4.1rem; //annule le margin causé par le img {padding-top: 2rem; padding-bottom: 2rem;} line:8
         .active {
             font-weight: 800;
             border-top: 5px solid;

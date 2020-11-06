@@ -85,7 +85,7 @@ nav ul:first-child .logo + li {
 nav ul:last-child {
   display: flex;
   justify-content: space-between;
-  margin-top: -4rem;
+  margin-top: -4.1rem;
 }
 nav ul:last-child .active {
   font-weight: 800;
