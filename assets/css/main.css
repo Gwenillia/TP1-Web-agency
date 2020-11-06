@@ -441,6 +441,9 @@ nav ul:last-child a:active {
 .portfolio .projets__cards--8 {
   background: url("../img/portfolio/08.jpg");
 }
+.portfolio .projets__cards:hover .desc {
+  opacity: 1;
+}
 .portfolio .projets__cards .desc {
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -449,14 +452,6 @@ nav ul:last-child a:active {
   color: white;
   padding: 1rem;
   opacity: 0;
-  transition: 0.2s ease-in-out;
-  -webkit-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  -ms-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-}
-.portfolio .projets__cards .desc:hover {
-  opacity: 1;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
