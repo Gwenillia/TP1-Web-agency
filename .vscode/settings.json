@@ -6,5 +6,5 @@
     },
     "compile-hero.scss-output-directory": "./assets/css",
     "compile-hero.generate-minified-js": true,
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
 }
